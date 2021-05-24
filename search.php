@@ -188,6 +188,7 @@
         },
         success: function(data) {
           console.log(data);
+          
           var textHtml1 = ""
           textHtml1 += "<table>"
           textHtml1 +=
@@ -219,6 +220,7 @@
 
           // $("#bodyResult" + invoiceId).html(textHtml1);
           $("#bodyResult" + invoiceId).append(textHtml1);
+
           // document.getElementById("more-table").innerHTML = textHtml1
         }
       });
