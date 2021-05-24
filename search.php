@@ -209,7 +209,7 @@
 
             textHtml1 += "<tr>"
 
-            textHtml1 += "<td>" + item1.invoice_id + "</td><td>" + item1.name + "</td><td>" + item1.item_id + "</td><td>" + item1.company_id + "</td><td>" + item1.description + "</td><td>" + item1.price + "</td><td>" + item1.total + "</td><td>...</td>"
+            textHtml1 += "<td>" + item1.invoice_id + "</td><td>" + item1.name + "</td><td>" + item1.item_id + "</td><td>" + item1.company_id + "</td><td>" + item1.description + "</td><td>" + item1.price + "</td><td>" + item1.total + "</td>"
 
             textHtml1 += "</tr>"
 
@@ -217,8 +217,8 @@
           // textHtml1 += "<br>"
           textHtml1 += "</table>"
 
-          $("#bodyResult" + invoiceId).html(textHtml1);
-          // $("#bodyResult" + invoiceId).append(textHtml1);
+          // $("#bodyResult" + invoiceId).html(textHtml1);
+          $("#bodyResult" + invoiceId).append(textHtml1);
           // document.getElementById("more-table").innerHTML = textHtml1
         }
       });
